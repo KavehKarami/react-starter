@@ -5,7 +5,7 @@ import CustomLink from '../utils/CustomLink';
 const Footer = () => {
   return (
     <div>
-      {routes.map((route => <CustomLink path={route.path} exact={route.exact} label={route.label} />))}
+      {routes.map(((route, index) => <CustomLink key={index} path={route.path} exact={route.exact} label={route.label} />))}
     </div>
   );
 }

@@ -9,9 +9,9 @@ const CustomLink = (props) => {
       children={
         ({ match }) =>
           match ?
-            <Link class="active" to={props.path}>{props.label}</Link>
+            <Link className="active" to={props.path}>{props.label}</Link>
             :
-            <Link class="" to={props.path}>{props.label}</Link>
+            <Link className="" to={props.path}>{props.label}</Link>
       }
     />
 

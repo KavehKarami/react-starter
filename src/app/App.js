@@ -8,9 +8,9 @@ function App() {
     <Router>
       <Layout>
         <Switch>
-          {routes.map((route, key) => (
+          {routes.map((route, index) => (
             <Route
-              key={key}
+              key={index}
               path={route.path}
               component={route.component}
               exact={route.exact}
